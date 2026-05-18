@@ -12,7 +12,7 @@ warnings.filterwarnings("ignore")
 # 1. Load and parse data
 # ---------------------------------------------------------------------------
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "Nat_Gas.csv")
+DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "Nat_Gas.csv")
 
 df = pd.read_csv(DATA_PATH)
 df["Dates"] = pd.to_datetime(df["Dates"], format="%m/%d/%y")
